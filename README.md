@@ -10,7 +10,7 @@ In this project i acheived the following
 
 ## Live Demo
 
-## [View Live Demo]()
+## [View Live Demo](https://1gordon.github.io/To-Do-List/)
 
 ## Built With
 
