@@ -10,6 +10,10 @@ In this project i acheived the following
 
 ## Built With
 
+## Live Demo
+
+- [Live View](https://1gordon.github.io/To-Do-List/dist/)
+
 - HTML and CSS
 - Javascript
 
