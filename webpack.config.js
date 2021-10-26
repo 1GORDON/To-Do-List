@@ -1,11 +1,11 @@
 const path = require('path');
-/* eslint-enable */
+/* eslint-disable*/
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 /* eslint-enable */
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
+  mode: 'production',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -13,6 +13,12 @@ module.exports = {
   devServer: {
     static: './dist',
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
   module: {
     rules: [
       {
@@ -23,11 +29,18 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(csv|tsv)$/i,
+        use: ['csv-loader'],
+      },
+      {
+        test: /\.xml$/i,
+        use: ['xml-loader'],
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
-  ],
 };
