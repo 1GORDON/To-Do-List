@@ -8,10 +8,6 @@ In this project i acheived the following
 - On page load, render the dynamically created list of tasks in the dedicated placeholder.
 - Create a style.css and set rules for the To Do List
 
-## Live Demo
-
-## [View Live Demo](https://1gordon.github.io/To-Do-List/)
-
 ## Built With
 
 - HTML and CSS
