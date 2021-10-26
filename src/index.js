@@ -23,8 +23,8 @@ window.onload = () => {
 
   const displayToDo = () => {
     tasks.forEach((task) => {
-      todoList.innerHTML += 
-        `<label class="checkbox" for="myCheckboxId">
+      todoList.innerHTML 
+      += `<label class="checkbox" for="myCheckboxId">
           <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId" placeholder=".">
           <div class="checkbox__box"></div>
           <li>
