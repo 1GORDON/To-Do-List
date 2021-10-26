@@ -2,7 +2,7 @@
 
 In this project i acheived the following
 
-- Created an empty To Do List placeholder (<ul> element).
+- Created an empty To Do List placeholder (ul element).
 - Created an index.js file and set an array of some simple to do tasks.
 - Created a function to iterate over the tasks array and populate an HTML list item element for each task.
 - On page load, render the dynamically created list of tasks in the dedicated placeholder.
