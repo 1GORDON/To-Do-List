@@ -21,6 +21,7 @@
   "homepage": "https://github.com/1GORDON/To-Do-List#readme",
   "devDependencies": {
     "css-loader": "^6.4.0",
+    "hint": "^6.1.6",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.59.1",
