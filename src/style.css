@@ -23,7 +23,6 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   font-size: 30px;
   font-weight: 600;
@@ -31,18 +30,17 @@ header {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-header span {
-  font-size: 30px;
-  font-weight: 300;
-  cursor: pointer;
+  color: rgb(139, 137, 137);
 }
 
 .inputField {
   display: flex;
   width: 100%;
   height: 60px;
+}
+
+.fa {
+  color: rgb(139, 137, 137);
 }
 
 input {
@@ -128,4 +126,8 @@ hr {
   align-items: center;
   justify-content: center;
   background-color: rgb(199, 197, 197);
+}
+
+.clear-all-completed {
+  color: rgb(63, 61, 61);
 }
