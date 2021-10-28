@@ -2,15 +2,16 @@
 
 In this project i acheived the following
 
-- Add a new JavaScript file status.js
-- Add event listener to the checkbox.
-- Update items object's value for completed key upon user actions.
-- Store the updated array of items in local storage, so the user gets the correct list values after the page reloads.
+- Removed all hardcoded items from the tasks array.
+- Created a new JavaScript file for the new functionality.
+- Implemented a function for adding a new task.
+- Implemented a function for editing task descriptions.
+- Implemented a function for deleting a task.
+- Implemented a function for the "Clear all completed" button.
 
 ## Built With
 
 ## Live Demo
-
 
 - HTML and CSS
 - Javascript
