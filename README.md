@@ -9,9 +9,11 @@ In this project i acheived the following
 - Implemented a function for deleting a task.
 - Implemented a function for the "Clear all completed" button.
 
-## Built With
-
 ## Live Demo
+
+- [Go Live](https://1gordon.github.io/To-Do-List/dist/)
+
+## Built With
 
 - HTML and CSS
 - Javascript
