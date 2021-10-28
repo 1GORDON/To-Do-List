@@ -2,9 +2,8 @@
 
 In this project i acheived the following
 
-- Add a new JavaScript files and import it as a module:
-  it will contain methods related to the status updates (completed: true / false).
-- Add event listener to the checkbox (change).
+- Add a new JavaScript file status.js
+- Add event listener to the checkbox.
 - Update items object's value for completed key upon user actions.
 - Store the updated array of items in local storage, so the user gets the correct list values after the page reloads.
 
