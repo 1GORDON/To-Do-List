@@ -11,7 +11,6 @@ In this project i acheived the following
 
 ## Live Demo
 
-- [Live View](https://1gordon.github.io/To-Do-List/dist/)
 
 - HTML and CSS
 - Javascript
