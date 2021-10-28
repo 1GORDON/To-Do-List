@@ -24,17 +24,14 @@ const tasks = [
   },
 ];
 
-// Create a new instance of local storage todo
 if (!localStorage.getItem('todo')) {
   localStorage.setItem('todo', JSON.stringify(tasks));
 }
 
-// We are passing whatever is in todo into todos and if it is empty we are returning an empty array
 const todos = JSON.parse(localStorage.getItem('todo') || '[]');
 
 const todoList = document.querySelector('.todoList');
 
-// Learn about destructuring
 todos.forEach(({ description, id, completed }) => {
   const div = document.createElement('div');
   div.classList.add('d-height');
@@ -44,7 +41,6 @@ todos.forEach(({ description, id, completed }) => {
   todoList.appendChild(div);
 });
 
-// inCheck, we are adding an event listener to a particular id, todos is the whole array
 for (let i = 0; i < todos.length; i += 1) {
   const inCheck = document.querySelector(`#check-${todos[i].id}`);
   inCheck.addEventListener('change', (e) => {
