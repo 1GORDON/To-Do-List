@@ -55,7 +55,6 @@ window.onload = () => {
       const taskDescription = element.childNodes[1].childNodes[3];
       const editInput = element.childNodes[1].childNodes[5];
 
-      // hide / show the icons
       deleteIcon.style.display = 'flex';
       ellipsisIcon.style.display = 'none';
       editInput.style.display = 'flex';
