@@ -2,17 +2,15 @@
 
 In this project i acheived the following
 
-- Created an empty To Do List placeholder (ul element).
-- Created an index.js file and set an array of some simple to do tasks.
-- Created a function to iterate over the tasks array and populate an HTML list item element for each task.
-- On page load, render the dynamically created list of tasks in the dedicated placeholder.
-- Create a style.css and set rules for the To Do List
+- Add a new JavaScript file status.js
+- Add event listener to the checkbox.
+- Update items object's value for completed key upon user actions.
+- Store the updated array of items in local storage, so the user gets the correct list values after the page reloads.
 
 ## Built With
 
 ## Live Demo
 
-- [Live View](https://1gordon.github.io/To-Do-List/dist/)
 
 - HTML and CSS
 - Javascript
