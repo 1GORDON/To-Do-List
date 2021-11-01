@@ -13,7 +13,6 @@ body {
 
 .wrapper {
   width: 50rem;
-  min-height: 23vh;
   margin-left: 7rem;
   margin-top: 90px;
   border-radius: 10px;
@@ -33,8 +32,23 @@ header {
   padding-right: 10px;
 }
 
+.listElements {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
 .fas {
   color: rgb(139, 137, 137);
+}
+
+.trash {
+  display: none;
+}
+
+.no-outline {
+  border: none;
+  outline-width: 0;
 }
 
 header span {
@@ -72,14 +86,47 @@ input {
   cursor: pointer;
 }
 
-.fa {
-  color: rgb(139, 137, 137);
+.d-flex {
+  display: flex;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.list-group-1 {
+  width: 100%;
+  height: 60%;
+}
+
+.task-description {
+  margin-left: 10px;
+}
+
+.edit-input {
+  display: none;
+  margin-left: 10px;
+  height: 40px;
+  width: 70%;
 }
 
 .todoList {
   display: flex;
   flex-direction: column;
   padding: 0;
+}
+
+.clear-all-completed {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.text-line {
+  text-decoration: line-through;
+}
+
+.clear-all-completed:hover {
+  color: rgb(238, 238, 238);
 }
 
 hr {
@@ -129,13 +176,6 @@ hr {
 
 .check-box {
   margin-right: 4px;
-}
-
-.delete-icon {
-  background-image: url(/src/assets/menu.png);
-  background-size: cover;
-  height: 13px;
-  width: 13px;
 }
 
 .footer {
