@@ -1,6 +1,7 @@
 /**
  * @jest-environment jsdom
  */
+/* eslint-disable */
 import addTask from "../_mocks_/addItem";
 import localStorageMock from "../_mocks_/localStorage";
 

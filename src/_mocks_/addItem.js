@@ -1,3 +1,4 @@
+/* eslint-disable */
 import localStorageMock from "./localStorage";
 
 function addTask(todos) {

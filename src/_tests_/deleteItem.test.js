@@ -1,6 +1,7 @@
 /**
  * @jest-environment jsdom
  */
+/* eslint-disable */
 import deleteTask from "../_mocks_/deleteItem";
 
 describe('remove a task from the list', () => {
