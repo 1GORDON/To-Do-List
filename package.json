@@ -4,7 +4,7 @@
   "description": "This project will use Web-pack to bundle JavaScript functionality",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/1GORDON/To-Do-List#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
     "css-loader": "^6.4.0",
     "hint": "^6.1.6",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.3.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.59.1",
     "webpack-cli": "^4.9.1",
@@ -30,5 +32,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }
