@@ -1,190 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap");
+body {
+  background-color: rgb(243, 239, 239);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-* {
-  box-sizing: border-box;
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 50%;
+  min-width: 280px;
+  height: auto;
+  padding: 20px 0 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.4rem;
+  background-color: white;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #5c5c5c;
+  padding: 10px 20px;
+}
+
+.heading {
   margin: 0;
 }
 
-body {
+.add-item {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.wrapper {
-  width: 50rem;
-  margin-left: 7rem;
-  margin-top: 90px;
-  border-radius: 10px;
-  font-family: "Yantramanav", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 30px;
-  font-weight: 600;
-  height: 60px;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.listElements {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.fas {
-  color: rgb(139, 137, 137);
-}
-
-.trash {
-  display: none;
-}
-
-.no-outline {
+  height: 30px;
   border: none;
-  outline-width: 0;
-}
-
-header span {
-  font-size: 30px;
-  font-weight: 300;
-  cursor: pointer;
-}
-
-.inputField {
-  display: flex;
-  width: 100%;
-  height: 60px;
-}
-
-input {
-  background-color: transparent;
-  border: 0 solid;
-}
-
-.inputField #input-box {
-  height: 100%;
-  width: 100%;
+  background: none;
+  outline: none;
   font-family: "Roboto", sans-serif;
-  padding-left: 10px;
 }
 
-.inputField #input-box::placeholder {
+.add-item::placeholder {
   font-style: italic;
 }
 
-.inputField span {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  cursor: pointer;
+.enter-button {
+  transform: rotate(90deg);
+  border: none;
+  background: none;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.center-items {
-  align-items: center;
-}
-
-.list-group-1 {
-  width: 100%;
-  height: 60%;
-}
-
-.task-description {
-  margin-left: 10px;
-}
-
-.edit-input {
-  display: none;
-  margin-left: 10px;
-  height: 40px;
-  width: 70%;
-}
-
-.todoList {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-
-.clear-all-completed {
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-
-.text-line {
-  text-decoration: line-through;
-}
-
-.clear-all-completed:hover {
-  color: rgb(238, 238, 238);
-}
-
-hr {
-  color: rgb(78, 78, 78);
-  width: 100%;
-}
-
-.todoList li {
-  display: flex;
-  position: relative;
-  list-style: none;
-  height: 60px;
-  margin-bottom: 8px;
-  font-weight: 500;
-  padding: 10px;
-  align-items: center;
-  width: 100%;
-}
-
-.footer > span {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.todoList li span {
-  position: absolute;
-  right: 0;
+.checkbox {
   width: 20px;
-  cursor: pointer;
+  height: 20px;
 }
 
-.d-height {
-  height: 50px;
-  padding-right: 9px;
-  padding-left: 9px;
-  border-bottom: 1px solid #d9d1d1;
-}
-
-.todo-cont {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: 100;
-}
-
-.check-box {
-  margin-right: 4px;
-}
-
-.footer {
-  display: flex;
+.description {
+  margin: 0;
+  padding: 15px 20px 0 20px;
   width: 100%;
-  height: 60px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(199, 197, 197);
+  border: none;
+  background: none;
+  resize: none;
+  outline: none;
+}
+
+.task-button,
+.clear,
+.enter-button {
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  color: #414141;
+  background: none;
+}
+
+.clear-completed {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  color: #414141;
+  border: none;
+  background: #dddbdb;
+}
+
+.clear:hover i,
+.enter-button:hover .level.down,
+.clear-completed:hover {
+  font-weight: bold;
+  color: rgb(139, 137, 137);
+}
+
+.task-button:hover .trash.alternate {
+  color: rgb(139, 137, 137);
 }
