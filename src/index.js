@@ -23,7 +23,7 @@ window.onload = () => {
       <hr>`;
   });
 
-  const changeTaskStatus = (index, status) => {
+  function changeTaskStatus(index, status) {
     todos.filter((todo, todoIndex) => {
       if (index === todoIndex) {
         todo.completed = status;

@@ -34,3 +34,12 @@ export function clearCompleted() {
   localStorage.setItem('todo', JSON.stringify(newTodos));
   window.location.reload();
 }
+
+// export function clearCompleted() {
+//   const newTodos = todos.filter((todo) => todo.completed !== true);
+//   newTodos.forEach((object, index) => {
+//     object.index = index + 1;
+//   });
+//   localStorage.setItem('todo', JSON.stringify(newTodos));
+//   window.location.reload();
+// }
